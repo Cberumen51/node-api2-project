@@ -6,7 +6,7 @@ const port = 2415
 
 
 server.use(epxress.json())
-server.use("/posts", postsRouter)
+server.use("/", postsRouter)
 
 server.listen(port, () => {
     console.log(`Server running at http://locallhost:${port}`)
